@@ -6,9 +6,9 @@ Command Line Tool and GUI Tool that have 3 features:
 
 - [Verilog Code Generator](using_gui_tool.md#verilog-code-generator)
   - Generate verilog code (.v file) of inaccurate adder or inaccurate multiplier based on user chosen options
-- [Error Analyzers](using_gui_tool.md#error-analzyer)
+- [Error Analyzers](using_gui_tool.md#error-analyzer)
   - Analyze error rates of inaccurate adder/inaccurate multiplier by comparing it with accurate adder/accurate multiplier using 1 million monte carlo random sampled unsigned numbers
-- [Accuracy Analzyer](using_gui_tool.md#accuracy-analzyer)
+- [Accuracy Analyzer](using_gui_tool.md#accuracy-analyzer)
   - Analyze accuracy of inaccurate adder/inaccurate multiplier by comparing it with accurate adder/accurate multiplier using two user provided unsigned numbers
 
 ## Requirements
