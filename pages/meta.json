@@ -3,5 +3,6 @@
   "gui-tool": "GUI Tool",
   "editing-generated-verilog-code": "Editing Generated Code (ASIC Designs only)",
   "cmd-tool": "Command Line Tool",
+  "file-tree-structure": "File Tree Explanation",
   "citations": "Citations"
 }

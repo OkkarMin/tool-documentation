@@ -1,0 +1,51 @@
+import Bleed from "nextra-theme-docs/bleed";
+
+```
+Approximate_Computing_Tool                          # Main folder
+├─ 📂 GUI                                           # Folder containing files related to GUI tool
+│  ├─ 📂Analyzers                                   # Analyzers logic for GUI Tool
+│  │  ├─ 📂 AccuracyAnalyzers
+│  │  │  ├─ AdderAccuracyAnalyzer.py
+│  │  │  └─ MultiplierAccuracyAnalyzer.py
+│  │  └─ 📂 AErrorAnalyzers
+│  │     ├─ AdderErrorAnalyzer.py
+│  │     └─ MultiplierErrorAnalyzer.py
+│  ├─ 📂 Layout                                     # GUI Tool UI Layout related files
+│  │  ├─ AccuracyAnalysisLayout.py
+│  │  ├─ CommonElements.py
+│  │  ├─ ErrorAnalysisLayout.py
+│  │  └─ VerilogCodeGeneratorLayout.py
+│  ├─ 📂 Logic                                      # GUI Tool UI Logic related files
+│  │  ├─ AccuracyAnalysisTabLogic.py
+│  │  ├─ ErrorAnalysisTabLogic.py
+│  │  └─ VerilogCodeGeneratorTabLogic.py
+│  ├─ 📂 Utils                                      # Helper files for GUI Tool
+│  │  ├─ FileSaver.py
+│  │  ├─ PrintToDebugWindow.py
+│  │  └─ Validator.py
+│  ├─ 📂 Validator                                  # Input validation logic
+│  │  ├─ AccuracyAnalysisTabValidator.py
+│  │  ├─ ErrorAnalysisTabValidator.py
+│  │  └─ VerilogCodeGeneratorTabValidator.py
+│  ├─ 📂 VerilogGenerators                          # Verilog code generation logic for GUI Tool
+│  │  ├─ ASIC_Based_VerilogAdder_Generator.py
+│  │  ├─ ASIC_Based_VerilogMultiplier_Generator.py
+│  │  ├─ FPGA_Based_VerilogAdder_Generator.py
+│  │  ├─ GUI - Shortcut.lnk
+│  │  ├─ VerilogGenerator.py
+│  │  └─ VerilogGeneratorFactory.py
+├─ AdderError.py                                    #
+├─ AdderSumCalc.py                                  #
+├─ ApproxAdders.py                                  #
+├─ ApproxMultipliers.py                             #
+├─ ApproximateComputingAccuracy.py                  # Logic for CMD Tool
+├─ ApproximateComputingError.py                     #
+├─ ApproximateComputingVerilog.py                   #
+├─ VerilogMultiplierCode.py                         #
+├─ VerilogStructuralAdder.py                        #
+├─ adder.py
+├─ MultiplierError.py
+├─ GUIMainToolCode.py                               # Entry point for GUI Tool
+├─ MainToolCode.py                                  # Entry point for CMD Tool
+└─ requirements.txt
+```
