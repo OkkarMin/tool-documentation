@@ -17,25 +17,33 @@ Generate verilog code (.v file) of inaccurate adder or inaccurate multiplier bas
 
 1. Type of Verilog Code to generate, choose one of `[ASIC Verilog Adder, ASIC Verilog Multiplier, FPGA Verilog Adder]`
 
-   - Default Options: `ASIC Verilog Adder`
+   - Default Options:
+     - `ASIC Verilog Adder`
 
 2. Total number of bits for the module verilog code generation
 
-   - Default Options: `4`
-   - Constraints: `4 <= total_bits <= 32`
+   - Default Options:
+     - `4`
+   - Constraints:
+     - `4 <= total_bits <= 32`
 
 3. Accurate bits and Inaccurate bits selection. Move slider to adjust
 
-   - Default Options: `acc_bits = 1` `inacc_bits = 3`
-   - Constraints: `3 <= inacc_bits <= total_bits - 1`
+   - Default Options:
+     - `acc_bits = 1`
+     - `inacc_bits = 3`
+   - Constraints:
+     - `3 <= inacc_bits <= total_bits - 1`
 
 4. Type of hardware module to generate, chose one of `[HEAA, HOERAA, HOAANED, M-HERLOA]`
 
-   - Default Options:`HEAA`
+   - Default Options:
+     - `HEAA`
 
 5. Choose location in computer to save generated verilog file
 
-   - Default Options: `Desktop`
+   - Default Options:
+     - `Desktop`
 
 6. Generate verilog code or exit
 
@@ -45,21 +53,28 @@ Generate verilog code (.v file) of inaccurate adder or inaccurate multiplier bas
 
 1.  Multiplicand bits and Multiplier bits
 
-    - Default Options: `4`
-    - Constraints: `multiplicand_bits >= 3`and `multiplier_bits >=3`
+    - Default Options:
+      - `4`
+    - Constraints:
+      - `multiplicand_bits >= 3`
+      - `multiplier_bits >=3`
 
-2.  V-cut (only for MxN PAAM01 with V-cut)
+2.  V-cut (only for MxN AAM01 with V-cut)
 
-    - Default Options `3`
-    - Constraints: `0 <= v_cut <= multiplicand_bits`
+    - Default Options
+      - `3`
+    - Constraints:
+      - `0 <= v_cut <= multiplicand_bits`
 
-3.  Type of hardware module to generate, chose one of `[MxN Accurate Multiplier, MxN Accurate Binary Array Multiplier, MxN PAAM01 with V-cut]`
+3.  Type of hardware module to generate, chose one of `[MxN Accurate Multiplier, MxN Accurate Binary Array Multiplier, MxN AAM01 with V-cut]`
 
-    - Default Options: `MxN Accurate Multiplier`
+    - Default Options:
+      - `MxN Accurate Multiplier`
 
 4.  Choose location in computer to save generated verilog file
 
-    - Default Options: `Desktop`
+    - Default Options:
+      - `Desktop`
 
 5.  Generate verilog code or exit
 
