@@ -14,7 +14,8 @@ export default {
   footerEditOnGitHubLink: false, // will link to the docs repo
   logo: (
     <span className="mr-2 font-extrabold hidden md:inline">
-      Approximate Computing Tool
+      Approximator: Tool for Automatic Generation of Approximate Adders and
+      Multipliers
     </span>
   ),
   head: (
