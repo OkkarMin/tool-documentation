@@ -1,0 +1,35 @@
+import Callout from "nextra-theme-docs/callout";
+
+# Adding New Error Metrics
+
+<Callout emoji="💡">
+  See [File Tree Explanation](/file-tree-structure) to understand the project's
+  file and folder structure
+</Callout>
+
+In order to add new error metrics to the approximator:
+
+1. Add the new error metric algorithm in the folder `Analyzers`
+
+   - See [HEAA error analysis algorithm here](https://github.com/OkkarMin/approximator-tool/blob/c7557efbeb09c03c0919eae0f762ba19ec28012f/GUI/Analyzers/ErrorAnalyzers/AdderErrorAnalyzer.py#L11)
+
+2. Define how UI will look like for the new error metric in the folder `Layout`
+
+   - See [Error Analysis UI layout here](https://github.com/OkkarMin/FYP/blob/05e46008b49872aab6ab2b1551689be2b77f1c1d/GUI/Layout/ErrorAnalysisLayout.py#L4-L5)
+   - [List of all available UI elements for PySimpleGUI](https://pysimplegui.readthedocs.io/en/latest/call%20reference/#the-elements)
+
+3. (Optional) Write validation logic/input constraints for the new error metrics in the folder `Validators`
+
+   - See [Error Analysis Validation logic here](https://github.com/OkkarMin/FYP/blob/ab2497b32e12cde97c3efc8f3e00d4d2391700a5/GUI/Validator/ErrorAnalysisTabValidator.py#L0-L1)
+   - Function that takes in input values and return True if error occur, False otherwise
+
+4. Add logic to handle UI input changes in folder `Logic`. This ties the UI events to the code that runs, akin to event handlers
+
+   - See [Error Analysis UI logic here](https://github.com/OkkarMin/FYP/blob/ab2497b32e12cde97c3efc8f3e00d4d2391700a5/GUI/Logic/ErrorAnalysisTabLogic.py#L5-L6)
+   - e.g: What to do when a certain button has been pressed
+   - e.g: What to do when certain input filed has been filled
+   - e.g: When button has been pressed:
+     - runs validation logic, then
+     - runs error metric algorithm, then
+     - display result to user, then
+     - (optional) clear any previous input values
